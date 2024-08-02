@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:secret_school/signup_screen.dart';
 
+import 'home_page.dart';
 import 'login_screen.dart';
 
 void main() {
@@ -34,7 +36,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: Login_Screen(),
+      home:Home_page (),
     );
   }
 }

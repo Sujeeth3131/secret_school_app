@@ -1,27 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:secret_school/signup_screen.dart';
 import 'package:sign_button/constants.dart';
 import 'package:sign_button/create_button.dart';
 
-class Login_Screen extends StatefulWidget {
-  const Login_Screen({super.key});
+class Signup_Screen extends StatefulWidget {
+  const Signup_Screen({super.key});
 
   @override
-  State<Login_Screen> createState() => _Login_ScreenState();
+  State<Signup_Screen> createState() => _Signup_ScreenState();
 }
 
-class _Login_ScreenState extends State<Login_Screen> {
+class _Signup_ScreenState extends State<Signup_Screen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       body: Container(
         decoration: BoxDecoration(
             image: DecorationImage(
                 image: ExactAssetImage("images/secert school fav-1.png"),
                 fit: BoxFit.cover)),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(
               height: 80,
@@ -36,7 +33,7 @@ class _Login_ScreenState extends State<Login_Screen> {
             Padding(
               padding: const EdgeInsets.only(left: 120.0),
               child: Text(
-                "Welcome Back!",
+                "Get Started!",
                 style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
@@ -49,7 +46,7 @@ class _Login_ScreenState extends State<Login_Screen> {
             Padding(
               padding: const EdgeInsets.only(left: 120.0),
               child: Text(
-                "Resume Your Journey",
+                "Start Your Entrepreneural Journey",
                 style: TextStyle(color: Colors.white, fontSize: 20),
               ),
             ),
@@ -66,6 +63,24 @@ class _Login_ScreenState extends State<Login_Screen> {
                   size: 18,
                 ),
                 hintText: "Email Address",
+                hintStyle: TextStyle(color: Colors.white),
+                border:
+                    OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
+              )),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 48.0, right: 48),
+              child: TextFormField(
+                  decoration: InputDecoration(
+                prefixIcon: Icon(
+                  Icons.phone,
+                  color: Colors.white,
+                  size: 18,
+                ),
+                hintText: "Phone",
                 hintStyle: TextStyle(color: Colors.white),
                 border:
                     OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
@@ -97,12 +112,29 @@ class _Login_ScreenState extends State<Login_Screen> {
             SizedBox(
               height: 15,
             ),
+            Padding(
+              padding: const EdgeInsets.only(left: 48.0, right: 48),
+              child: TextFormField(
+                  decoration: InputDecoration(
+                prefixIcon: Icon(
+                  Icons.lock,
+                  color: Colors.white,
+                  size: 18,
+                ),
+                suffixIcon: Icon(
+                  Icons.remove_red_eye,
+                  color: Colors.white,
+                  size: 28,
+                ),
+                hintText: " Confirm Password",
+                hintStyle: TextStyle(color: Colors.white),
+                border:
+                    OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
+              )),
+            ),
             Center(
               child: ElevatedButton(
-                  onPressed: () { Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const Signup_Screen()),
-                  );},
+                  onPressed: () {},
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                   ),
@@ -172,7 +204,7 @@ class _Login_ScreenState extends State<Login_Screen> {
                   style: TextStyle(color: Colors.white60, fontSize: 14),
                   children: const <TextSpan>[
                     TextSpan(
-                        text: '  Register Now',
+                        text: '  Login Now',
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
