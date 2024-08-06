@@ -16,6 +16,7 @@ class _Signup_ScreenState extends State<Signup_Screen> {
       body: Container(
         decoration: BoxDecoration(
             image: DecorationImage(
+
                 image: ExactAssetImage("images/secert school fav-1.png"),
                 fit: BoxFit.cover)),
         child: Column(

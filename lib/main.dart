@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:secret_school/first_page.dart';
 import 'package:secret_school/signup_screen.dart';
 
 import 'home_page.dart';
@@ -36,7 +37,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home:Home_page (),
+      home:First_Page (),
     );
   }
 }

@@ -21,9 +21,9 @@ class _Home_pageState extends State<Home_page> {
           Icon(Icons.notification_important_rounded,size: 18,color: Colors.white,)
         ],
       ),
-      body: Column(
+      body: Column(crossAxisAlignment:CrossAxisAlignment.center,
         children: [
-
+                ElevatedButton(onPressed: (){}, child:Text(""))
         ],
       ),
     );
